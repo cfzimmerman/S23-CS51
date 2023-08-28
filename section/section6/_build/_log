@@ -1,0 +1,16 @@
+### Starting build.
+# Target: section6.ml.depends, tags: { extension:ml, file:section6.ml, ocaml, ocamldep, quiet }
+ocamlfind ocamldep -modules section6.ml > section6.ml.depends # cached
+# Target: nativeLazyStreams.mli.depends, tags: { extension:mli, file:nativeLazyStreams.mli, ocaml, ocamldep, quiet }
+ocamlfind ocamldep -modules nativeLazyStreams.mli > nativeLazyStreams.mli.depends # cached
+# Target: nativeLazyStreams.cmi, tags: { byte, compile, extension:mli, file:nativeLazyStreams.mli, interf, ocaml, quiet }
+ocamlfind ocamlc -c -o nativeLazyStreams.cmi nativeLazyStreams.mli # cached
+# Target: section6.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:section6.cmo, file:section6.ml, implem, ocaml, quiet }
+ocamlfind ocamlc -c -o section6.cmo section6.ml # cached
+# Target: nativeLazyStreams.ml.depends, tags: { extension:ml, file:nativeLazyStreams.ml, ocaml, ocamldep, quiet }
+ocamlfind ocamldep -modules nativeLazyStreams.ml > nativeLazyStreams.ml.depends # cached
+# Target: nativeLazyStreams.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:nativeLazyStreams.cmo, file:nativeLazyStreams.ml, implem, ocaml, quiet }
+ocamlfind ocamlc -c -o nativeLazyStreams.cmo nativeLazyStreams.ml # cached
+# Target: section6.byte, tags: { byte, dont_link_with, extension:byte, file:section6.byte, link, ocaml, program, quiet }
+ocamlfind ocamlc -linkpkg nativeLazyStreams.cmo section6.cmo -o section6.byte # cached
+# Compilation successful.

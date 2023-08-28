@@ -1,0 +1,4 @@
+"Resource: /Users/gersonpersonnat/cs51tfsections/section1/sec1.ml": "\234\241z\185\134)\141Lek\240@s\016\252|"
+"Rule: ocaml: ml -> cmo & cmi (%=sec1 )": "\207\230\172\180\":O\167\194e\1801\138\188D\195"
+"Rule: ocaml dependencies ml (%=sec1 )": "F\129m\202\151I\236\212R\241]\232Vrl\161"
+"Rule: ocaml: cmo* -> byte (%=sec1 )": "\249\159x'\216\005\218\176\220@RH;6\139\138"

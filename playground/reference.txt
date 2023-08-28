@@ -1,0 +1,16 @@
+let get_variables ( year : int ) : ( string, int ) Hashtbl.t =
+  let inputs = Hashtbl.create 20 in
+  Hashtbl.add inputs "a" (get_a year) ;
+  Hashtbl.add inputs "b" (get_b year) ;
+  Hashtbl.add inputs "c" (get_c year) ;
+  Hashtbl.add inputs "d" (get_d b ) ;
+  Hashtbl.add inputs "e" (get_e b ) ;
+  Hashtbl.add inputs "f" (get_b b ) ;
+  inputs
+;;
+
+let read_variables ( year : int ) =
+  let inputs = get_variables 2021 in
+  let found_a = Hashtbl.find inputs "a" in
+  Printf.printf "%i\n" found_a 
+;;

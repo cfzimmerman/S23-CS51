@@ -1,0 +1,3 @@
+# ocamlformat --inplace order_another.ml
+profile = default
+version = 0.21.0

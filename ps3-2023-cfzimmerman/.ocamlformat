@@ -1,0 +1,3 @@
+# ocamlformat --inplace bignum.ml
+profile = default
+version = 0.21.0

@@ -1,0 +1,8 @@
+### Starting build.
+# Target: playground.ml.depends, tags: { extension:ml, file:playground.ml, ocaml, ocamldep, quiet }
+ocamlfind ocamldep -modules playground.ml > playground.ml.depends
+# Target: playground.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:playground.cmo, file:playground.ml, implem, ocaml, quiet }
+ocamlfind ocamlc -c -o playground.cmo playground.ml
+# Target: playground.byte, tags: { byte, dont_link_with, extension:byte, file:playground.byte, link, ocaml, program, quiet }
+ocamlfind ocamlc -linkpkg playground.cmo -o playground.byte
+# Compilation successful.

@@ -1,0 +1,3 @@
+# ocamlformat --inplace ps0.ml
+profile = default
+version = 0.21.0
